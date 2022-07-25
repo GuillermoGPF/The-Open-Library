@@ -1,0 +1,204 @@
+	/* Library Style */
+	.wrapNavbar {
+		position: absolute; 
+		width: 100%; 
+		height: 100px; 
+		z-index: 5;
+	}
+
+	.navbar-default {
+		background-color: transparent;
+		height: 80px;
+		color: #fff;
+		transition: all 500ms ease-in-out;
+	}
+
+	.shrink {
+		background-color: #c08661;
+		height: 70px;
+		transition: all 500ms ease-in-out;
+	}
+
+	.navbar-default .navbar-brand,
+	.navbar-default .navbar-brand:hover {
+		font-size: 40px;
+		color: #fff;
+		font-family: 'corbel', 'calibri', 'sans-serif';
+		font-weight: 500;
+		transition: all 500ms ease-in-out;
+	}
+	
+	.shrink .navbar-brand {
+		font-size: 35px;
+	}
+
+	a {
+		color: #fff!important;
+	}
+
+	.navbar-default ul li a {
+		text-decoration: none;
+		display: inline-block;
+		position: relative;
+		font-size: 25px;
+	}
+
+	.navbar-default ul li a:after {
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		background: #fff;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+
+	.navbar-default ul li a:hover:after {
+		width: 100%;
+		left: 0;
+	}
+	
+	.shrink .navbar-collapse {
+		background-color: #c08661;
+		transition: all 500ms ease-in-out;
+	}
+
+	.navbar-toggler {
+		color: rgba(255,255,255,0.7);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.carousel-inner {
+		z-index: -1000;
+	}
+	
+	.carousel-item {
+		width: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+	.one {
+		background-image: url('../img/book1.jpg');
+	}
+
+	.two {
+		background-image: url('../img/book2.jpg');
+	}
+
+	.three {
+		background-image: url('../img/book3.jpg');
+	}
+
+	.four {
+		background-image: url('../img/book4.jpg');
+	}
+
+	#carousel .capa {
+		width: 100%; 
+		height: 100vh;
+		background: rgba(50,50,50,0.3); 
+		position: absolute; 
+		top: 0; 
+		left: 0;
+	}
+
+	#carousel h1 {
+		font-weight: lighter;
+		color: white; 
+		font-size: 50px; 
+		position: absolute; 
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#carousel button {
+		z-index: 3;
+	}
+	
+	.hero {
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+	}
+
+	.card {
+		width: 100%;
+		height: 100%;
+		border: none;
+	 	border-radius: 50px!important;
+	  	overflow: hidden;
+		cursor: pointer;
+	  	box-shadow: 0 2px 10px rgba(192,134,97,0.6)!important;
+	}
+
+	.card img {
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		object-fit: cover;
+	}
+
+	.card:hover > .capa-card {
+		width: 100%; 
+		height: 100%;
+		background: rgba(192,134,97,0.6)!important; 
+		position: absolute; 
+		top: 0; 
+		left: 0;
+		display: block;
+		cursor: pointer;
+		transition: all 500ms ease-in-out;
+	}
+
+	.card h5 {
+		color: white; 
+		font-size: 40px; 
+		position: absolute; 
+		top: 50%; 
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	footer {
+		background-color: #c08661; 
+		color: #fff;
+		font-family: 'calibri', 'sans-serif';
+		box-shadow: 0 2px 10px rgba(0,0,0,1);
+	}
+
+	footer a,
+	footer a:hover,
+	footer p {
+		font-family: 'calibri', 'sans-serif'; 
+		color: #fff; 
+		font-size: 14pt; 
+		font-weight: bold; 
+		text-align: justify;
+		text-decoration: none;
+	}
+
+	footer h6 {
+		font-size: 20px;
+	}
+
+	footer .navbar-brand,
+	footer .navbar-brand:hover {
+		font-size: 40px;
+		color: #fff;
+		font-family: 'corbel', 'calibri', 'sans-serif';
+		font-weight: 500;
+		transition: all 500ms ease-in-out;
+	}
